@@ -4,97 +4,21 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="stylecalculadora.css">
 <title>Calculadoras FAVC</title>
-
-<script>
-
-function all_inclusive() {
-    let hotel = document.getElementById('input1').value;
-    let adulto = parseInt(document.getElementById('input2').value);
-    let kids = parseInt(document.getElementById('input3').value);
-    let noches = parseInt(document.getElementById('input4').value);
-
-    if (hotel == "FALC") {
-        x = 240;
-        y = 80;
-        a = 95
-        b = 35
-        let amount = ((adulto * x) + (kids * y)) * noches;
-        let answer = formatNumber(amount);
-        document.getElementById('output2').innerHTML = answer + " Puntos";
-        let dinero = ((adulto * a) + (kids * b)) * noches;
-        let money = formatNumber(dinero);
-        document.getElementById('output3').innerHTML = "$"+ money + " Dollars";
-
-    }
-    else if (hotel == "FACR" || hotel == "EXCZ" || hotel == "EXKO") {
-        x = 230;
-        y = 80;
-        a = 85
-        b = 35
-        let amount = ((adulto * x) + (kids * y)) * noches;
-        let answer = formatNumber(amount);
-        document.getElementById('output2').innerHTML = answer + " Puntos";
-        let dinero = ((adulto * a) + (kids * b)) * noches;
-        let money = formatNumber(dinero);
-        document.getElementById('output3').innerHTML = "$"+ money + " Dollars";
-    }
-    else if (hotel == "FACC" || hotel == "FAPV" || hotel == "CFAVA" || hotel == "CFAHO" ) {
-        x = 0
-        y = 180
-        a = 0
-        b = 65
-        let amount = ((adulto * x) + (kids * y)) * noches;
-        let answer = formatNumber(amount);
-        document.getElementById('output2').innerHTML = answer + " Puntos";
-        let dinero = ((adulto * a) + (kids * b)) * noches;
-        let money = formatNumber(dinero);
-        document.getElementById('output3').innerHTML = "$"+ money + " Dollars";
-    }
-}
-
-    function formatNumber(num) {
-  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
-}
-
-function wallet_free() {
-
-let x = parseInt(document.getElementById('input5').value);
-let y = (x/80) * 500
-let answer = formatNumber(y)
-document.getElementById('output').innerHTML = "$" + answer + " MXN";
-
-}
-function dinero() {
-let x = parseInt(document.getElementById('input6').value);
-let y = (x/500) * 80
-let z = y.toFixed(2)
-let answer = formatNumber(z)
-document.getElementById('output1').innerHTML = answer + " Puntos";
-}
-
-</script>
-
 </head>
 <body> 
+
     <h2>Calculadora de Wallet Free</h2>
             <p align="center"><b>Puntos: <input type="text" id="input5" size="5"></b>
             <a href="#" class="button" button onclick="wallet_free()">Calculate</a>
-            <!--
-            <p>80 Puntos / 500 MXN <br>
-                160 Puntos / 1,000 MXN <br>
-                320 Puntos / 2,000 MXN <br>
-                480 Puntos / 3,000 MXN <br>
-                800 Puntos / 5,000 MXN <br>
-                1,600 Puntos / 10,000 MXN 
-                </p>
-            -->
+           
                 <div id="output"></div>
             </p>
             <p align="center">        
             <b>Dinero: <input type="text" id="input6" size="5"> </b>
                 <a href="#" class="button" button onclick="dinero()">Calculate</a>
             <div id="output1"></div></p>
-    <h2>Calculadora de All Inclusive</h2>
+
+    <h2>Calculadora de All Inclusive 2020</h2>
         <b>Hotel: <input type="text" id="input1" size="3"> </b><br>
         <b>Adultos: <input type="text" id="input2" size="3"> </b><br>
         <b>Niños: <input type="text" id="input3" size="3"> </b><br>
@@ -103,5 +27,21 @@ document.getElementById('output1').innerHTML = answer + " Puntos";
             <a href="#" class="button" button onclick="all_inclusive()">Calculate</a>
                 <div id="output2"></div>
                 <div id="output3"></div>
+
+    <h2>Calculadora de All Inclusive 2021</h2>
+        <b>Hotel: <input type="text" id="input7" size="3"> </b><br>
+        <b>Adultos: <input type="text" id="input8" size="3"> </b><br>
+        <b>Niños: <input type="text" id="input9" size="3"> </b><br>
+        <b>Noches: <input type="text" id="input10" size="3"> </b><br>
+        <br>
+            <a href="#" class="button" button onclick="all_inclusive1()">Calculate</a>
+                <div id="output4"></div>
+                <div id="output5"></div>            
 </body>
+<footer>
+    <script src="calculator2020.js"></script>
+    <script src="calculator2021.js"></script>
+    <script src="walletfree.js"></script>
+</footer>
+
 </html>
