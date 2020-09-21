@@ -7,7 +7,7 @@ html, body {
     font-family: 'Lato', sans-serif;
     text-align: center;
   }
-  .button {
+.button {
     background-color: rgb(192, 70, 70);
     border: none;
     color: white;
@@ -17,3 +17,10 @@ html, body {
     display: inline-block;
     font-size: 16px;
   }
+footer{
+    padding: 10px;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color:rgb(192, 70, 70);
+    text-align: center;
+}
