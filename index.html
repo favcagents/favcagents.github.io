@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <h1>Fiesta Amerciana Calculadors</h1>
+        <h1>Fiesta Amerciana Calculadoras</h1>
         <img src="/images/download favc (2).jpg" alt="FAVC">
     </header> 
     <main>
         <section>
-            <h2>Calculadora de Wallet Free</h2>
+            <h2>Wallet Free</h2>
                     <b>Puntos: <input type="text" id="input5" size="5"></b>
                     <a href="#" class="button" button onclick="wallet_free()">Calculate</a>
                         <div id="output"></div> 
@@ -46,10 +46,20 @@
         </section>
     </main>    
         <footer>
+            <p>Spencer Design, Copyright &copy;<span id="copyright"></span> Fecha: <span id="today"></span></p>
+            <p>Esta Pagina No Es Oficial de Fiesta Americana o Grupo Posadas</p>
             <script src="/js/calculator2020.js"></script>
             <script src="/js/calculator2021.js"></script>
             <script src="/js/walletfree.js"></script>
-            <p>Spencer Design, Copyright &copy; 2020</p>
+            <script>document.getElementById("copyright").innerHTML = new Date().getFullYear();</script>
+            <script>
+
+                var today = new Date();
+                
+                var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+                
+                document.getElementById("today").innerHTML = date;
+            </script>
         </footer>
 </body>
 </html>
