@@ -21,7 +21,9 @@ img {
 footer{
   position: fixed;
   bottom: 0;
-  width: 98.5%;
+  width: 100%;
+  left: 0;
+  right: 0;  
   color: #ffffff;
   background-color:rgb(192, 70, 70);
   text-align: center;
@@ -41,6 +43,7 @@ main {
   font-size: 20px;
   text-align: center;
   max-height: auto;
+  margin-bottom: 61px;
 }
 main section {
 	margin: 0.5rem;
