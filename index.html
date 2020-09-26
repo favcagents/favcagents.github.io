@@ -2,47 +2,53 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="stylecalculadora.css">
+<link rel="stylesheet" type="text/css" href="/css/stylecalculadora.css">
 <title>Calculadoras FAVC</title>
 </head>
-<body> 
-
-    <h2>Calculadora de Wallet Free</h2>
-            <p align="center"><b>Puntos: <input type="text" id="input5" size="5"></b>
-            <a href="#" class="button" button onclick="wallet_free()">Calculate</a>
-           
-                <div id="output"></div>
-            </p>
-            <p align="center">        
-            <b>Dinero: <input type="text" id="input6" size="5"> </b>
-                <a href="#" class="button" button onclick="dinero()">Calculate</a>
-            <div id="output1"></div></p>
-
-    <h2>Calculadora de All Inclusive 2020</h2>
-        <b>Hotel: <input type="text" id="input1" size="3"> </b><br>
-        <b>Adultos: <input type="text" id="input2" size="3"> </b><br>
-        <b>Niños: <input type="text" id="input3" size="3"> </b><br>
-        <b>Noches: <input type="text" id="input4" size="3"> </b><br>
-        <br>
-            <a href="#" class="button" button onclick="all_inclusive()">Calculate</a>
-                <div id="output2"></div>
-                <div id="output3"></div>
-
-    <h2>Calculadora de All Inclusive 2021</h2>
-        <b>Hotel: <input type="text" id="input7" size="3"> </b><br>
-        <b>Adultos: <input type="text" id="input8" size="3"> </b><br>
-        <b>Niños: <input type="text" id="input9" size="3"> </b><br>
-        <b>Noches: <input type="text" id="input10" size="3"> </b><br>
-        <br>
-            <a href="#" class="button" button onclick="all_inclusive1()">Calculate</a>
-                <div id="output4"></div>
-                <div id="output5"></div>            
+<body>
+    <header>
+        <h1>Fiesta Amerciana Calculadors</h1>
+        <img src="/images/download favc (2).jpg" alt="FAVC">
+    </header> 
+    <main>
+        <section>
+            <h2>Calculadora de Wallet Free</h2>
+                    <b>Puntos: <input type="text" id="input5" size="5"></b>
+                    <a href="#" class="button" button onclick="wallet_free()">Calculate</a>
+                        <div id="output"></div> 
+                    <br>  
+                    <b>Dinero: <input type="text" id="input6" size="5"> </b>
+                        <a href="#" class="button" button onclick="dinero()">Calculate</a>
+                    <div id="output1"></div>
+        </section>
+        <section>       
+            <h2>All Inclusive 2020</h2>
+                <b>Hotel: <input type="text" id="input1" size="3"> </b><br>
+                <b>Adultos: <input type="text" id="input2" size="3"> </b><br>
+                <b>Niños: <input type="text" id="input3" size="3"> </b><br>
+                <b>Noches: <input type="text" id="input4" size="3"> </b><br>
+                <br>
+                    <a href="#" class="button" button onclick="all_inclusive()">Calculate</a>
+                        <div id="output2"></div>
+                        <div id="output3"></div>
+        </section> 
+        <section>        
+            <h2>All Inclusive 2021</h2>
+                <b>Hotel: <input type="text" id="input7" size="3"> </b><br>
+                <b>Adultos: <input type="text" id="input8" size="3"> </b><br>
+                <b>Niños: <input type="text" id="input9" size="3"> </b><br>
+                <b>Noches: <input type="text" id="input10" size="3"> </b><br>
+                <br>
+                    <a href="#" class="button" button onclick="all_inclusive1()">Calculate</a>
+                        <div id="output4"></div>
+                        <div id="output5"></div>
+        </section>  
+        <footer>
+            <script src="/js/calculator2020.js"></script>
+            <script src="/js/calculator2021.js"></script>
+            <script src="/js/walletfree.js"></script>
+            <p>Spencer Design, Copyright &copy; 2020</p>
+        </footer>
+    </main>
 </body>
-<footer>
-    <script src="calculator2020.js"></script>
-    <script src="calculator2021.js"></script>
-    <script src="walletfree.js"></script>
-    <p>Spencer Design, Copyright &copy; 2020</p>
-</footer>
-
 </html>

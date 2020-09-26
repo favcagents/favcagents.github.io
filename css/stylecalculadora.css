@@ -1,0 +1,60 @@
+body {
+    font-weight: 300;
+    line-height: 1.5;
+    background-color: rgb(190, 190, 190);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+  }
+.button {
+    background-color: rgb(241, 97, 40);
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+img {
+  width: 175px;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 98.5%;
+  color: #ffffff;
+  background-color:rgb(192, 70, 70);
+  text-align: center;
+}
+header {
+  font-size: 15px;
+  background-color:rgb(192, 70, 70);
+  color: #ffffff;
+  text-align: center;
+  padding: 1%;
+}
+main {
+	max-width: auto;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+  font-size: 20px;
+  text-align: center;
+  max-height: auto;
+}
+main section {
+	margin: 0.5rem;
+	padding: 0 1rem;
+}
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+  }
+}
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
