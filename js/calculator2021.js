@@ -41,6 +41,18 @@ function all_inclusive1() {
         let money = formatNumber(dinero);
         document.getElementById('output5').innerHTML = "$"+ money + " Dollars";
     }
+    else if (hotel == "LRLC") {
+        x = 350
+        y = 190
+        a = 125
+        b = 75
+        let amount = ((adulto * x) + (kids * y)) * noches;
+        let answer = formatNumber(amount);
+        document.getElementById('output4').innerHTML = answer + " Puntos";
+        let dinero = ((adulto * a) + (kids * b)) * noches;
+        let money = formatNumber(dinero);
+        document.getElementById('output5').innerHTML = "$"+ money + " Dollars";
+    }
 }
 
     function formatNumber(num) {
