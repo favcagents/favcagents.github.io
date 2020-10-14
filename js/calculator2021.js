@@ -7,8 +7,8 @@ function all_inclusive1() {
     if (hotel == "FALC") {
         x = 250;
         y = 85;
-        a = 100
-        b = 35
+        a = 100;
+        b = 35;
         let amount = ((adulto * x) + (kids * y)) * noches;
         let answer = formatNumber(amount);
         document.getElementById('output4').innerHTML = answer + " Puntos";
@@ -20,8 +20,8 @@ function all_inclusive1() {
     else if (hotel == "FACR" || hotel == "EXCZ" || hotel == "EXKO") {
         x = 240;
         y = 85;
-        a = 90
-        b = 35
+        a = 90;
+        b = 35;
         let amount = ((adulto * x) + (kids * y)) * noches;
         let answer = formatNumber(amount);
         document.getElementById('output4').innerHTML = answer + " Puntos";
@@ -30,10 +30,10 @@ function all_inclusive1() {
         document.getElementById('output5').innerHTML = "$"+ money + " Dollars";
     }
     else if (hotel == "FACC" || hotel == "FAPV") {
-        x = 0
-        y = 190
-        a = 0
-        b = 70
+        x = 0;
+        y = 190;
+        a = 0;
+        b = 70;
         let amount = ((adulto * x) + (kids * y)) * noches;
         let answer = formatNumber(amount);
         document.getElementById('output4').innerHTML = answer + " Puntos";
@@ -42,10 +42,10 @@ function all_inclusive1() {
         document.getElementById('output5').innerHTML = "$"+ money + " Dollars";
     }
     else if (hotel == "LRLC") {
-        x = 350
-        y = 190
-        a = 125
-        b = 75
+        x = 350;
+        y = 190;
+        a = 125;
+        b = 75;
         let amount = ((adulto * x) + (kids * y)) * noches;
         let answer = formatNumber(amount);
         document.getElementById('output4').innerHTML = answer + " Puntos";
@@ -53,8 +53,12 @@ function all_inclusive1() {
         let money = formatNumber(dinero);
         document.getElementById('output5').innerHTML = "$"+ money + " Dollars";
     }
-}
+    else {
+        let answer = "Invalid - Fill all Spaces"
+        document.getElementById('output4').innerHTML = answer;
+    }
 
+}
     function formatNumber(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
 }

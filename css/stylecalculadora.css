@@ -50,6 +50,12 @@ main section {
 	margin: 0.5rem;
 	padding: 0 1rem;
 }
+
+p {
+  font-size: 12.5px;
+}
+
+
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
 	main {

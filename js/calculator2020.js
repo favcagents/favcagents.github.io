@@ -41,6 +41,10 @@ function all_inclusive() {
         let money = formatNumber(dinero);
         document.getElementById('output3').innerHTML = "$"+ money + " Dollars";
     }
+    else {
+        let answer = "Invalid - Fill all Spaces"
+        document.getElementById('output2').innerHTML = answer;
+    }
 }
 
     function formatNumber(num) {
