@@ -53,6 +53,19 @@ function all_inclusive1() {
         let money = formatNumber(dinero);
         document.getElementById('output5').innerHTML = "$"+ money + " Dollars";
     }
+
+    else if (hotel == "FACB") {
+        x = 400;
+        y = 205;
+        a = 140;
+        b = 72;
+        let amount = ((adulto * x) + (kids * y)) * noches;
+        let answer = formatNumber(amount);
+        document.getElementById('output4').innerHTML = answer + " Puntos";
+        let dinero = ((adulto * a) + (kids * b)) * noches;
+        let money = formatNumber(dinero);
+        document.getElementById('output5').innerHTML = "$"+ money + " Dollars";
+    }
     else {
         let answer = "Invalid - Fill all Spaces"
         document.getElementById('output4').innerHTML = answer;
