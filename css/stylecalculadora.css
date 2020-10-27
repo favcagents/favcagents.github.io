@@ -5,15 +5,37 @@ body {
     font-family: 'Lato', sans-serif;
     text-align: center;
   }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+  }
+  
+  li {
+    display:inline;
+    background-color:  rgb(241, 137, 40);
+  }
+  
+  li a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
 .button {
     background-color: rgb(241, 137, 40);
     border: none;
     color: white;
-    padding: 5px 16px;
+    padding: 3px 14px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
 }
 img {
   width: 175px;
@@ -41,7 +63,7 @@ main {
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   max-height: auto;
   margin-bottom: 200px;

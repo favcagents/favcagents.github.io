@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" type="text/css" href="/css/stylecalculadora.css">
+<title>Calculadoras FAVC</title>
+</head>
+<body>
+    <header>
+        <h1>Cobranza Tools</h1>
+        <img src="/images/logo_head.png" alt="FAVC">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Cobranza/index.html">Cobranza</a></li>
+                <li><a href=>FAQ</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <section>
+            <h2>Anualidad 2021</h2>
+                Puntos: <input type="text" id="input1" size="3"><br>
+                <form>
+                    <label>Tipo de Membresia:</label>
+                    <select id="input2">
+                        <option>Regular</option>
+                        <option>Master</option>
+                    </select>
+                  </form>
+                <form>
+                    <label>Status:</label>
+                    <select id="input3">
+                        <option>Regular</option>
+                        <option>Founder</option>
+                    </select>
+                </form>
+                <br>
+                <a href="#" class="button" button onclick="anualidad()">Calculate</a>
+                        <div id="output1"></div>
+                        <div id="output2"></div>  
+        </section>
+        <section>     
+            <h2>Financiamiento</h2>
+                <b>Saldo Insoluto: <input type="text" id="input1" size="3"> </b><br>
+                <br>
+                    <a href="#" class="button" button onclick="all_inclusive()">Calculate</a>
+                        <div id="output2"></div>
+                        <div id="output3"></div>         
+        </section> 
+        <section>
+            <h2>Infomation</h2>
+                
+        </section>
+    </main>    
+    <footer>
+        <script src="/Cobranza/jss/anualidad.js"></script>
+        <p>Spencer Design, Copyright &copy;<span id="copyright"></span> Fecha: <span id="today"></span> Esta Pagina No Es Oficial de Fiesta Americana o Grupo Posadas</p>
+        <script>document.getElementById("copyright").innerHTML = new Date().getFullYear();</script>
+        <script>
+
+            var today = new Date();
+            
+            var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+            
+            document.getElementById("today").innerHTML = date;
+        </script>
+    </footer>
+</body>
+</html>

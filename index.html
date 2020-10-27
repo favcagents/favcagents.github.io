@@ -4,12 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="stylesheet" type="text/css" href="/css/stylecalculadora.css">
-<title>Calculadoras FAVC</title>
+<title>FAVC Tools</title>
 </head>
 <body>
     <header>
-        <h1>Fiesta Americana Calculadoras</h1>
+        <h1>Reservation Tools</h1>
         <img src="/images/logo_head.png" alt="FAVC">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href=>Cobranza</a></li>
+                <li><a href="http://172.27.46.27:84/">Referidos</a></li>
+            </ul>
+        </nav>
     </header> 
     <main>
         <section>
@@ -24,9 +31,19 @@
         </section>
         <section>     
             <h2>All Inclusive 2020</h2>
-            <p>Hoteles: FALC,FACR,EXKO,EXCZ</p>
-            <p>SOLO Menores: FACC,FAPV</p>  
-                <b>Hotel: <input type="text" id="input1" size="3"> </b><br>
+                <form>
+                    <b><label>Hotel:</label></b>
+                    <select id="input1">
+                        <option>FALC</option>
+                        <option>FACR</option>
+                        <option>EXKO</option>
+                        <option>EXCZ</option>
+                        <optgroup label="Solo Menores">
+                            <option>FACC</option>
+                            <option>FAPV</option>
+                        </optgroup>
+                    </select>
+                  </form>
                 <b>Adultos: <input type="text" id="input2" size="3"> </b><br>
                 <b>Niños: <input type="text" id="input3" size="3"> </b><br>
                 <b>Noches: <input type="text" id="input4" size="3"> </b><br>
@@ -37,9 +54,21 @@
         </section> 
         <section>        
             <h2>All Inclusive 2021</h2>
-            <p>Hoteles: FALC,FACR,EXKO,EXCZ,LRLC,FACB</p>
-            <p>SOLO Menores: FACC,FAPV</p>
-                <b>Hotel: <input type="text" id="input7" size="3"> </b><br>
+                <form>
+                    <b><label>Hotel:</label></b>
+                    <select id="input7">
+                        <option>FALC</option>
+                        <option>FACR</option>
+                        <option>EXKO</option>
+                        <option>EXCZ</option>
+                        <option>LRLC</option>
+                        <option>FACB</option>
+                        <optgroup label="Solo Menores">
+                            <option>FACC</option>
+                            <option>FAPV</option>
+                        </optgroup>
+                    </select>
+                  </form>
                 <b>Adultos: <input type="text" id="input8" size="3"> </b><br>
                 <b>Niños: <input type="text" id="input9" size="3"> </b><br>
                 <b>Noches: <input type="text" id="input10" size="3"> </b><br>
@@ -50,8 +79,7 @@
         </section>
     </main>    
         <footer>
-            <p>Spencer Design, Copyright &copy;<span id="copyright"></span> Fecha: <span id="today"></span></p>
-            <p>Esta Pagina No Es Oficial de Fiesta Americana o Grupo Posadas</p>
+            <p>Spencer Design, Copyright &copy;<span id="copyright"></span> Fecha: <span id="today"></span> Esta Pagina No Es Oficial de Fiesta Americana o Grupo Posadas</p>
             <script src="/js/calculator2020.js"></script>
             <script src="/js/calculator2021.js"></script>
             <script src="/js/walletfree.js"></script>
