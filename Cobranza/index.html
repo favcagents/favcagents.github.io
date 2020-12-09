@@ -37,26 +37,51 @@
                     </select>
                 </form>
                 <a href="#" class="button" button onclick="anualidad()">Calculate</a>
-                        <div id="output1"></div>
-                        <div id="output2"></div>
-                        <div id="output3"></div>
-                        <div id="output4"></div>    
+                        <div id="output"></div>
+                        <div id="output"></div>
+                        <div id="output"></div>
+                        <div id="output"></div>    
         </section>
         <section>     
             <h2>Financiamiento</h2>
                 <b>Saldo Insoluto: <input type="text" id="input1" size="3"> </b><br>
                 <br>
                     <a href="#" class="button" button onclick="all_inclusive()">Calculate</a>
-                        <div id="output4"></div>
-                        <div id="output5"></div>         
+                        <div id="output"></div>
+                        <div id="output"></div>         
         </section> 
-        <section>
-            <h2>Infomation</h2>
-                
+        <section>        
+            <h2>All Inclusive 2021</h2>
+                <form>
+                    <b><label>Hotel:</label></b>
+                    <select id="input7">
+                        <option>FALC</option>
+                        <option>FACR</option>
+                        <option>EXKO</option>
+                        <option>EXCZ</option>
+                        <option>LRLC</option>
+                        <option>FACB</option>
+                        <optgroup label="Solo Menores">
+                            <option>FACC</option>
+                            <option>FAPV</option>
+                        </optgroup>
+                    </select>
+                  </form>
+                <b>Adultos: <input type="text" id="input8" size="3"> </b><br>
+                <b>Niños: <input type="text" id="input9" size="3"> </b><br>
+                <b>Noches: <input type="text" id="input10" size="3"> </b><br>
+                <b>Discount: <input type="text" id="input11" size="3"> </b><br>
+                <br>
+                    <a href="#" class="button" button onclick="all_inclusive2()">Calculate</a>
+                        <div id="output4"></div>
+                        <div id="output5"></div>
+                        <div id="output6"></div>
+                        <div id="output7"></div>
         </section>
     </main>    
     <footer>
         <script src="/Cobranza/jss/anualidad.js"></script>
+        <script src="/Cobranza/jss/calculator2021test.js"></script>
         <p>Spencer Design, Copyright &copy;<span id="copyright"></span> Fecha: <span id="today"></span> Esta Pagina No Es Oficial de Fiesta Americana o Grupo Posadas</p>
         <script>document.getElementById("copyright").innerHTML = new Date().getFullYear();</script>
         <script>

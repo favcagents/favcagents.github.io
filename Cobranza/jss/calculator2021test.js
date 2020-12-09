@@ -1,8 +1,9 @@
-function all_inclusive1() {
+function all_inclusive2() {
     let hotel = document.getElementById('input7').value;
     let adulto = parseInt(document.getElementById('input8').value);
     let kids = parseInt(document.getElementById('input9').value);
     let noches = parseInt(document.getElementById('input10').value);
+    let discount = parseInt(document.getElementById('input11').value);
 
     if (hotel == "FALC") {
         x = 250;
