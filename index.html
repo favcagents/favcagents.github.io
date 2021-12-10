@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="https://encuesta.com/r/qXdTDdrYHtZ7O1GvVW6RyA/noreserva_favc">Tipificador</a></li>
+                <li><a href="http://xplorogo.globogo.com/wp-login.php">XploroGo</a></li>
                 <li><a href="http://172.27.46.27:84/">Referidos</a></li>
             </ul>
         </nav>
@@ -28,29 +28,6 @@
                     <b>Dinero: <input type="text" id="input6" size="5"> </b>
                         <a href="#" class="button" button onclick="dinero()">Calculate</a>
                     <div id="output1"></div>
-        </section>
-        <section>     
-            <h2>All Inclusive 2020</h2>
-                <form>
-                    <b><label>Hotel:</label></b>
-                    <select id="input1">
-                        <option>FALC</option>
-                        <option>FACR</option>
-                        <option>EXKO</option>
-                        <option>EXCZ</option>
-                        <optgroup label="Solo Menores">
-                            <option>FACC</option>
-                            <option>FAPV</option>
-                        </optgroup>
-                    </select>
-                  </form>
-                <b>Adultos: <input type="text" id="input2" size="3"> </b><br>
-                <b>Niños: <input type="text" id="input3" size="3"> </b><br>
-                <b>Noches: <input type="text" id="input4" size="3"> </b><br>
-                <br>
-                    <a href="#" class="button" button onclick="all_inclusive()">Calculate</a>
-                        <div id="output2"></div>
-                        <div id="output3"></div>         
         </section> 
         <section>        
             <h2>All Inclusive 2021</h2>
@@ -80,12 +57,69 @@
                         <div id="output6"></div>
                         <div id="output7"></div>
         </section>
+        <section>     
+            <h2>All Inclusive 2022</h2>
+                <form>
+                    <b><label>Hotel:</label></b>
+                    <select id="input221">
+                        <option>FAVL</option>
+                        <option>FACR</option>
+                        <option>EXKO</option>
+                        <option>EXCZ</option>
+                        <optgroup label="Hoteles Posadas">
+                            <option>LRLC</option>
+                            <option>FACB</option>
+                            <option>FALC</option>
+                        </optgroup>
+                        <optgroup label="Solo Menores">
+                            <option>FACC</option>
+                            <option>FAPV</option>
+                        </optgroup>
+                    </select>
+                </form>
+            <b>Adultos: <input type="text" id="input222" size="3"> </b><br>
+            <b>Niños: <input type="text" id="input223" size="3"> </b><br>
+            <b>Noches: <input type="text" id="input224" size="3"> </b><br>
+            <b>Discount: <input type="text" id="input225" size="3"> </b><br>
+            <br>
+                <a href="#" class="button" button onclick="all_inclusive2()">Calculate</a>
+                    <div id="output220"></div>
+                    <div id="output221"></div>
+                    <div id="output222"></div>
+                    <div id="output223"></div>      
+        </section>
+        <section>
+            <h2>Master International Points</h2>
+                    <b>Monto USD: <input type="text" id="inputmp" size="5"></b>
+                    <a href="#" class="button" button onclick="mipoints()">Calculate</a>
+                        <div id="outputmp"></div> 
+                    <br>    
+        </section>
+        <section>
+            <h2>FAVC Dinamica</h2>
+                <h5>Sólo Hoteles Posadas</h3>
+                    <b>Monto USD: <input type="text" id="inputfavc" size="5"></b>
+                    <a href="#" class="button" button onclick="favcdinamica()">Calculate</a>
+                        <div id="outputfavc"></div> 
+                    <br>    
+        </section>  
+        <section>
+            <h2>Fiesta Rewards</h2>
+                <h5>Sólo se permiten transferir 8,000 puntos por Mes</h3>
+                    <b>Puntos FAVC: <input type="text" id="inputfr1" size="5"></b>
+                    <a href="#" class="button" button onclick="fiesta_rewards()">Calculate</a>
+                        <div id="outputfr"></div> 
+                    <br>  
+        </section> 
     </main>    
         <footer>
             <p>Spencer Design, Copyright &copy;<span id="copyright"></span> Fecha: <span id="today"></span> Esta Pagina No Es Oficial de Fiesta Americana o Grupo Posadas</p>
-            <script src="/js/calculator2020.js"></script>
+            <script src="/js/calculator2022.js"></script>
             <script src="/js/calculator2021.js"></script>
             <script src="/js/walletfree.js"></script>
+            <script src="/js/fiestarewards.js"></script>
+            <script src="/js/mip.js"></script>
+            <script src="/js/favcdinamica.js"></script>
             <script>document.getElementById("copyright").innerHTML = new Date().getFullYear();</script>
             <script>
 
