@@ -15,7 +15,7 @@ function all_inclusive() {
         let dinero = ((adulto * a) + (kids * b)) * noches;
         let money = formatNumber(dinero);
         document.getElementById('output3').innerHTML = "$"+ money + " Dollars";
-
+        return false;
     }
     else if (hotel == "FACR" || hotel == "EXCZ" || hotel == "EXKO") {
         x = 230;
