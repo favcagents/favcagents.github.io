@@ -7,7 +7,7 @@ function all_inclusive2() {
 
     if (hotel == "FAVL") {
         x = 275;
-        y = 113;
+        y = 115;
         a = 110;
         b = 45;
         let amount = ((adulto * x) + (kids * y)) * noches;
@@ -28,8 +28,8 @@ function all_inclusive2() {
 
     }
     else if (hotel == "FACR" || hotel == "EXCZ" || hotel == "EXKO") {
-        x = 238;
-        y = 113;
+        x = 240;
+        y = 115;
         a = 95;
         b = 45;
         let amount = ((adulto * x) + (kids * y)) * noches;
@@ -113,7 +113,7 @@ function all_inclusive2() {
         document.getElementById('output223').innerHTML = "$"+ m + " Dollars con Descuento";
     }
     else if (hotel == "FALC") {
-        x = 263;
+        x = 265;
         y = 175;
         a = 105;
         b = 70;
