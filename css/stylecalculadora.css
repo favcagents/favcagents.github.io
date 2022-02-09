@@ -75,7 +75,10 @@ main section {
 p {
   font-size: 12.5px;
 }
-
+footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
 
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
