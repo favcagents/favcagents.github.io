@@ -7,9 +7,9 @@ function all_inclusive2() {
 
     if (hotel == "FAVL") {
         x = 275;
-        y = 113;
+        y = 160;
         a = 110;
-        b = 45;
+        b = 60;
         let amount = ((adulto * x) + (kids * y)) * noches;
         let answer = formatNumber(amount);
         document.getElementById('output220').innerHTML = answer + " Puntos";
