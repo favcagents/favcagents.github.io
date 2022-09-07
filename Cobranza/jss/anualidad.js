@@ -2,38 +2,63 @@ function anualidad() {
     let puntos = parseInt(document.getElementById('input1').value);
     let type = document.getElementById('input2').value;
     let status = document.getElementById('input3').value;
+    let cambio = document.getElementById('input4').value;
 
 
-    if (type == "Regular") {
-        let x = 318.00;
-        if (status == "Regular") {
-            let y = .1952 * puntos;
-            let cuota = x.toFixed(2);
-            let mtto = y.toFixed(2);
-            let usd = cuota + mtto;
-            let answer = formatNumber(usd)
-            let fix1 = answer;
-            let mxn = usd * 20;
-            let fix2 = formatNumber(mxn);
-            document.getElementById('output1').innerHTML = "Cuota: $" + cuota + " USD";
-            document.getElementById('output2').innerHTML = "MTTO: $" + mtto + " USD";
-            document.getElementById('output3').innerHTML = "Total: $" + fix1 + " USD";
-            document.getElementById('output4').innerHTML = "Total: $" + fix2 + " MXN";
-        }
-        if (status == "Founder") {
-            y = .1632 
-        }
+    if ((type == "Regular") && (status == "Regular")) {
+        let x = 364;
+        let cc = x.toFixed(2);
+        document.getElementById('output1').innerHTML = "Cuota Club: $" + cc + " USD";
+        let y = .2237 * puntos;
+        let mtt1 = y.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output2').innerHTML = "Mtto: $" + mtt1 + " USD";
+        let z = x + y;
+        let fee = z.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output3').innerHTML = "Total USD: $" + fee + " USD";
+        let a = (z) * (cambio)
+        let money = a.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output4').innerHTML = "Total MXN: $" + money + " MXN";
     }
-    if (type == "Master") {
-        x = 334 
-        if (status == "Regular") {
-            y = .1952
-        } 
-        if (status == "Founder") {
-            y = .1632 
-        } 
+    if ((type == "Regular") && (status == "Founder")) {
+        let x = 364;
+        let cc = x.toFixed(2);
+        document.getElementById('output1').innerHTML = "Cuota Club: $" + cc + " USD";
+        let y = .1871 * puntos;
+        let mtt1 = y.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output2').innerHTML = "Mtto: $" + mtt1 + " USD";
+        let z = x + y;
+        let fee = z.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output3').innerHTML = "Total USD: $" + fee + " USD";
+        let a = (z) * (cambio)
+        let money = a.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output4').innerHTML = "Total MXN: $" + money + " MXN";
+    }
+    if ((type == "Master") && (status == "Regular")) {
+        let x = 383;
+        let cc = x.toFixed(2);
+        document.getElementById('output1').innerHTML = "Cuota Club: $" + cc + " USD";
+        let y = .2237 * puntos;
+        let mtt1 = y.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output2').innerHTML = "Mtto: $" + mtt1 + " USD";
+        let z = x + y;
+        let fee = z.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output3').innerHTML = "Total USD: $" + fee + " USD";
+        let a = (z) * (cambio)
+        let money = a.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output4').innerHTML = "Total MXN: $" + money + " MXN";
+    }
+    if ((type == "Master") && (status == "Founder")) {
+        let x = 383;
+        let cc = x.toFixed(2);
+        document.getElementById('output1').innerHTML = "Cuota Club: $" + cc + " USD";
+        let y = .1871 * puntos;
+        let mtt1 = y.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output2').innerHTML = "Mtto: $" + mtt1 + " USD";
+        let z = x + y;
+        let fee = z.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output3').innerHTML = "Total USD: $" + fee + " USD";
+        let a = (z) * (cambio)
+        let money = a.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+        document.getElementById('output4').innerHTML = "Total MXN: $" + money + " MXN";
     }
 }
-function formatNumber(num) {
-    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
-  }
