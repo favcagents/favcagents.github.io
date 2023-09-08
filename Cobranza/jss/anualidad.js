@@ -237,4 +237,62 @@ function anualidad() {
             document.getElementById('output4').innerHTML = "Total MXN: $" + money + " MXN";
         }
     }
+    else if (year == 2024) {
+        if ((type == "Regular") && (status == "Regular")) {
+            let x = 386;
+            let cc = x.toFixed(2);
+            document.getElementById('output1').innerHTML = "Cuota Club: $" + cc + " USD";
+            let y = .2371 * puntos;
+            let mtt1 = y.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output2').innerHTML = "Mtto: $" + mtt1 + " USD";
+            let z = x + y;
+            let fee = z.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output3').innerHTML = "Total USD: $" + fee + " USD";
+            let a = (z) * (cambio)
+            let money = a.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output4').innerHTML = "Total MXN: $" + money + " MXN";
+        }
+        if ((type == "Regular") && (status == "Founder")) {
+            let x = 386;
+            let cc = x.toFixed(2);
+            document.getElementById('output1').innerHTML = "Cuota Club: $" + cc + " USD";
+            let y = .1983 * puntos;
+            let mtt1 = y.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output2').innerHTML = "Mtto: $" + mtt1 + " USD";
+            let z = x + y;
+            let fee = z.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output3').innerHTML = "Total USD: $" + fee + " USD";
+            let a = (z) * (cambio)
+            let money = a.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output4').innerHTML = "Total MXN: $" + money + " MXN";
+        }
+        if ((type == "Master") && (status == "Regular")) {
+            let x = 406;
+            let cc = x.toFixed(2);
+            document.getElementById('output1').innerHTML = "Cuota Club: $" + cc + " USD";
+            let y = .2371 * puntos;
+            let mtt1 = y.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output2').innerHTML = "Mtto: $" + mtt1 + " USD";
+            let z = x + y;
+            let fee = z.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output3').innerHTML = "Total USD: $" + fee + " USD";
+            let a = (z) * (cambio)
+            let money = a.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output4').innerHTML = "Total MXN: $" + money + " MXN";
+        }
+        if ((type == "Master") && (status == "Founder")) {
+            let x = 406;
+            let cc = x.toFixed(2);
+            document.getElementById('output1').innerHTML = "Cuota Club: $" + cc + " USD";
+            let y = .1983 * puntos;
+            let mtt1 = y.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output2').innerHTML = "Mtto: $" + mtt1 + " USD";
+            let z = x + y;
+            let fee = z.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output3').innerHTML = "Total USD: $" + fee + " USD";
+            let a = (z) * (cambio)
+            let money = a.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+            document.getElementById('output4').innerHTML = "Total MXN: $" + money + " MXN";
+        }
+    }  
 }
