@@ -13,7 +13,7 @@ body {
   }
   li {
     display:inline;
-    background-color:  rgb(241, 137, 40);
+    background-color:  #F46245;
   }
   
   li a {
@@ -27,7 +27,7 @@ body {
     background-color: #ddd;
   }
 .button {
-    background-color: rgb(241, 137, 40);
+    background-color: #F46245;
     border: none;
     color: white;
     padding: 3px 14px;
@@ -46,14 +46,14 @@ footer{
   left: 0;
   right: 0;  
   color: #ffffff;
-  background-color:rgb(192, 70, 70);
+  background-color:#25687e;
   text-align: center;
   font-size: small;
 }
 header {
   font-size: 13px;
-  background-color:rgb(192, 70, 70);
-  color: #ffffff;
+  background-color:#25687e;
+  color: white;
   text-align: center;
   padding: .5%;
 }
