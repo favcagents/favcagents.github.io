@@ -30,37 +30,6 @@
                         <a href="#/" class="button" button onclick="dinero()">Calculate</a>
                     <div id="output1"></div>
         </section> 
-        <section>     
-            <h2>All Inclusive 2022</h2>
-                <form>
-                    <b><label>Hotel:</label></b>
-                    <select id="input221">
-                        <option>FAVL</option>
-                        <option>FACR</option>
-                        <option>EXKO</option>
-                        <option>EXCZ</option>
-                        <optgroup label="Hoteles Posadas">
-                            <option>LRLC</option>
-                            <option>FALC</option>
-                            <option>FACB</option>    
-                        </optgroup>
-                        <optgroup label="Solo Menores Puntos">
-                            <option>FACC</option>
-                            <option>FAPV</option>
-                        </optgroup>
-                    </select>
-                </form>
-            <b>Adultos: <input type="text" id="input222" size="3"> </b><br>
-            <b>Niños: <input type="text" id="input223" size="3"> </b><br>
-            <b>Noches: <input type="text" id="input224" size="3"> </b><br>
-            <b>Discount: <input type="text" id="input225" size="3"> </b><br>
-            <br>
-                <a href="#/" class="button" button onclick="all_inclusive2()">Calculate</a>
-                    <div id="output220"></div>
-                    <div id="output221"></div>
-                    <div id="output222"></div>
-                    <div id="output223"></div>      
-        </section>
         <section>        
             <h2>All Inclusive 2023</h2>
                 <form>
@@ -87,6 +56,29 @@
                         <div id="output322"></div>
                         <div id="output323"></div> 
         </section>
+        <section>        
+            <h2>All Inclusive 2024</h2>
+                <form>
+                    <b><label>Hotel:</label></b>
+                    <select id="input401">
+                        <option>FALC</option>
+                        <option>FACR</option>
+                        <option>EXKO</option>
+                        <option>EXCZ</option>
+                        <option>LRLC</option> 
+                    </select>
+                  </form>
+                  <b>Adultos: <input type="text" id="input402" size="3"> </b><br>
+                  <b>Niños: <input type="text" id="input403" size="3"> </b><br>
+                  <b>Noches: <input type="text" id="input404" size="3"> </b><br>
+                  <b>Discount: <input type="text" id="input405" size="3"> </b><br>
+                <br>
+                    <a href="#/" class="button" button onclick="all_inclusive4()">Calculate</a>
+                        <div id="output401"></div>
+                        <div id="output402"></div>
+                        <div id="output403"></div>
+                        <div id="output404"></div> 
+        </section>
         <section>
             <h2>Master International Points</h2>
                     <b>Monto USD: <input type="text" id="inputmp" size="5"></b>
@@ -110,11 +102,16 @@
                         <div id="outputfr"></div> 
                     <br>  
         </section> 
+        <section>
+            <h2>Millas/Kilómetros</h2>
+            <b>Coming Soon</b>
+        </section> 
     </main>    
         <footer>
             <p> <a href="mailto:aaron.spencer@posadas.com"> Spencer Design</a>, Copyright &copy;<span id="copyright"></span> Fecha: <span id="today"></span> Esta Pagina No Es Oficial de Fiesta Americana o Grupo Posadas</p>
             <script src="/js/calculator2022.js"></script>
             <script src="/js/calculator2023.js"></script>
+            <script src="/js/calculator2024.js"></script>
             <script src="/js/walletfree.js"></script>
             <script src="/js/fiestarewards.js"></script>
             <script src="/js/mip.js"></script>
